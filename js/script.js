@@ -18,6 +18,8 @@ let startGame = document.querySelector('.startGame');
 
 let numbersArray = [];
 
+let userArray = [];
+
 timer = 30;
 
 
@@ -38,7 +40,18 @@ startGame.addEventListener('click', function() {
         }
     }, 1000);
     
+    setTimeout(message, 32000)
 });
 
+function message() {
+    for (let index = 0; index < 5; index++) {
+        userArray.push = parseInt(prompt('inserisci i numeri memorizzati'));
+    }
 
-
+        if(userArray == numbersArray) {
+            alert('Hai memoria!')
+        } else {
+            alert('Ritenta :/')
+        }
+        console.log(userArray)
+}
